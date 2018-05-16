@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         content.title  = "This is a tests"
         content.subtitle = "Tring this out"
         content.body = " THis is body"
-        
+         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2, repeats: false)
         let request = UNNotificationRequest(identifier: "sendNotification", content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
